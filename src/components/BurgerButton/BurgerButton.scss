@@ -3,13 +3,12 @@
   @include square(44px);
 
   padding: 0;
-  background-color: var(--color-black);
-  border: var(--border-width-m) solid var(--color-black);
-  border-radius: var(--border-radius-xs);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-8);
 
   @include hover {
-    background-color: var(--color-accent);
-    border-color: transparent;
+    border-color: var(--color-dark);
   }
 
   &.is-active {
@@ -32,11 +31,10 @@
   }
 
   &__line {
-    transition:
-      stroke-dasharray var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
-      stroke-dashoffset var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke-dasharray var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
     fill: none;
-    stroke: var(--color-white);
+    stroke: var(--color-dark);
     stroke-width: 6;
     stroke-linecap: round;
     stroke-dasharray: 60 207;
@@ -45,4 +43,6 @@
       stroke-dasharray: 60 60;
     }
   }
+
+
 }

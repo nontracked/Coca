@@ -1,3 +1,4 @@
+/*
 class OverlayMenu {
   selectors = {
     root: '[data-js-overlay-menu]',
@@ -34,3 +35,35 @@ class OverlayMenu {
 }
 
 export default OverlayMenu
+*/
+
+export class OverlayMenu {
+  selectors = {
+    root: '[data-js-mobile-menu]',
+    overlay: '[data-js-mobile-menu-overlay]',
+    burgerButton: '[data-js-mobile-menu-burger-button]'
+  }
+
+  states = {
+    isActive: 'is-active',
+    isLock: 'is-lock'
+  }
+
+  constructor() {
+    this.rootElement = document.querySelector(this.selectors.root)
+    this.overlayElement = this.rootElement.querySelector(this.selectors.overlay)
+    this.burgerElement = this.rootElement.querySelector(this.selectors.burgerButton)
+    this.bindEvents()
+  }
+
+  onClick = () => {
+    this.burgerElement.classList.toggle(this.states.isActive)
+    this.overlayElement.classList.toggle(this.states.isActive)
+    document.documentElement.classList.toggle(this.states.isLock)
+  }
+
+  bindEvents() {
+    this.burgerElement.addEventListener('click', this.onClick)
+  }
+
+}
