@@ -1,3 +1,4 @@
+import {Hero} from "@/sections/Hero/index.js";
 
 export const metadata = {
   title: 'Home',
@@ -6,7 +7,7 @@ export const metadata = {
 export default () => {
   return (
     <>
-
+      <Hero />
     </>
   )
 }
