@@ -1,12 +1,11 @@
 import './Header.scss'
 import clsx from 'clsx'
 import Logo from '@/components/Logo'
-import Button from '@/components/Button'
+import { Button } from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
 import Icon from '@/components/Icon'
 
-export const Header = ({url}) => {
-
+export const Header = ({ url }) => {
   const menuItems = [
     {
       label: 'Home',
@@ -32,9 +31,17 @@ export const Header = ({url}) => {
         <Logo className="header__logo" />
         <nav className="header__menu" data-js-mobile-menu-overlay="">
           <ul className="header__menu-list">
-            {menuItems.map(({label, href}, index) => (
+            {menuItems.map(({ label, href }, index) => (
               <li className="header__menu__item" key={index}>
-                <a className={clsx("header__menu-link", href === url && 'is-active')} href={href}>{label}</a>
+                <a
+                  className={clsx(
+                    'header__menu-link',
+                    href === url && 'is-active'
+                  )}
+                  href={href}
+                >
+                  {label}
+                </a>
               </li>
             ))}
           </ul>
@@ -43,9 +50,10 @@ export const Header = ({url}) => {
           </a>
         </nav>
         <BurgerButton
-          className="header__burger-button visible-mobile" extraAttrs={{
-          'data-js-mobile-menu-burger-button': '',
-        }}
+          className="header__burger-button visible-mobile"
+          extraAttrs={{
+            'data-js-mobile-menu-burger-button': '',
+          }}
         />
       </div>
     </header>

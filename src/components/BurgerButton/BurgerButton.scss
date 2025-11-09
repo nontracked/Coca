@@ -31,8 +31,9 @@
   }
 
   &__line {
-    transition: stroke-dasharray var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-dashoffset var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+      stroke-dasharray var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
     fill: none;
     stroke: var(--color-dark);
     stroke-width: 6;
@@ -43,6 +44,4 @@
       stroke-dasharray: 60 60;
     }
   }
-
-
 }

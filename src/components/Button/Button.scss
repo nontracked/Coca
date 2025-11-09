@@ -1,15 +1,27 @@
 .button {
   display: inline-flex;
   align-items: center;
-  column-gap: 0.3em;
-  padding: 8px 12px;
-  color: var(--color-black);
-  background-color: var(--color-white);
-  border: var(--border);
-  border-radius: var(--border-radius-m);
+  padding-block: fluid(16, 12);
+  padding-inline: fluid(42, 16);
+  font-size: fluid(16, 14);
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+  border: none;
+  border-radius: 50px;
 
   @include hover {
     color: var(--color-white);
     background-color: var(--color-accent);
+  }
+
+  &--dark {
+    color: var(--color-white);
+    background-color: var(--color-dark);
+  }
+
+  &--light {
+    color: var(--color-dark);
+    background-color: var(--color-white);
   }
 }

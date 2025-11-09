@@ -2,6 +2,7 @@ html {
   &.is-lock {
     overflow: hidden;
   }
+
   scrollbar-gutter: auto;
 }
 
@@ -18,33 +19,37 @@ body {
 h1,
 .h1 {
   @include fluid-text(80, 32);
+
+  font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.04em;
-  font-weight: 700;
 }
 
 h2,
 .h2 {
   @include fluid-text(56, 24);
+
+  font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.04em;
-  font-weight: 600;
 }
 
 h3,
 .h3 {
   @include fluid-text(32, 16);
+
+  font-weight: 600;
   line-height: 131%;
   letter-spacing: -0.03em;
-  font-weight: 600;
 }
 
 h4,
 .h4 {
   @include fluid-text(32, 18);
+
+  font-weight: 600;
   line-height: 131%;
   letter-spacing: -0.03em;
-  font-weight: 600;
 }
 
 h5,

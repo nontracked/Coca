@@ -41,18 +41,20 @@ export class OverlayMenu {
   selectors = {
     root: '[data-js-mobile-menu]',
     overlay: '[data-js-mobile-menu-overlay]',
-    burgerButton: '[data-js-mobile-menu-burger-button]'
+    burgerButton: '[data-js-mobile-menu-burger-button]',
   }
 
   states = {
     isActive: 'is-active',
-    isLock: 'is-lock'
+    isLock: 'is-lock',
   }
 
   constructor() {
     this.rootElement = document.querySelector(this.selectors.root)
     this.overlayElement = this.rootElement.querySelector(this.selectors.overlay)
-    this.burgerElement = this.rootElement.querySelector(this.selectors.burgerButton)
+    this.burgerElement = this.rootElement.querySelector(
+      this.selectors.burgerButton
+    )
     this.bindEvents()
   }
 
@@ -65,5 +67,4 @@ export class OverlayMenu {
   bindEvents() {
     this.burgerElement.addEventListener('click', this.onClick)
   }
-
 }

@@ -2,9 +2,7 @@ import './Icon.scss'
 import clsx from 'clsx'
 import { Icon as MinistaIcon } from 'minista'
 
-export default (props) => {
-  const { className, name, hasFill = false, ariaLabel } = props
-
+export default ({ className, name, hasFill = false, ariaLabel }) => {
   return (
     <span className={clsx('icon', className)} aria-label={ariaLabel}>
       <MinistaIcon

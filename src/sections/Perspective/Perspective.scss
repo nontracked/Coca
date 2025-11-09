@@ -1,0 +1,25 @@
+.perspective {
+  color: var(--color-white);
+  background-color: var(--color-dark);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(80, 32);
+    padding-block: fluid(100, 40);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: fluid(56, 24) fluid(260);
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+  }
+}

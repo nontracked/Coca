@@ -1,0 +1,54 @@
+.support-card {
+  display: flex;
+  align-items: center;
+  column-gap: fluid(60, 16);
+
+  &__image {
+    border-radius: fluid(8, 6);
+
+    @include mobile-above {
+      max-width: 240px;
+    }
+
+    @include tablet {
+      min-width: 170px;
+      min-height: 216px;
+      object-fit: cover;
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+
+    div {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      display: flex;
+      padding: fluid(16, 8);
+      color: var(--color-white);
+      background-color: var(--color-background-transparent);
+      border-radius: 50%;
+      backdrop-filter: blur(8px);
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(24, 8);
+    max-width: 268px;
+  }
+
+  &__desc {
+    font-size: fluid(16, 14);
+    font-weight: 500;
+    line-height: 1.43;
+    color: var(--color-placeholder);
+  }
+}

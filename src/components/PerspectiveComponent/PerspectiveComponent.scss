@@ -1,0 +1,16 @@
+.perspective-component {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(24, 16);
+
+  &__title {
+    display: block;
+  }
+
+  &__desc {
+    font-size: fluid(16, 14);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-placeholder);
+  }
+}

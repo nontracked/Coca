@@ -1,6 +1,6 @@
 import '@/styles'
-import {Head} from 'minista'
-import {Header} from '@/layouts/Header'
+import { Head } from 'minista'
+import { Header } from '@/layouts/Header'
 import Content from '@/layouts/Content'
 import Footer from '@/layouts/Footer'
 import appleTouchIcon from '@/assets/favicons/apple-touch-icon.png'
@@ -9,11 +9,11 @@ import favicon16 from '@/assets/favicons/favicon-16x16.png'
 import manifest from '@/assets/favicons/site.webmanifest'
 
 export default (props) => {
-  const {children, title, url} = props
+  const { children, title, url } = props
 
   return (
     <>
-      <Head htmlAttributes={{lang: 'en'}}>
+      <Head htmlAttributes={{ lang: 'en' }}>
         <title>Coca | {title}</title>
         <script src="/src/main.js" type="module" />
         <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />

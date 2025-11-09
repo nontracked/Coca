@@ -1,0 +1,26 @@
+.section-header {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(24, 16);
+
+  &__desc {
+    font-size: fluid(18, 14);
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-placeholder);
+  }
+}
+
+.section-header--flex {
+  flex-direction: row;
+  column-gap: 24px;
+}
+
+.section-header--center {
+  align-items: center;
+  text-align: center;
+}
+
+.section-header--default {
+  max-width: 763px;
+}

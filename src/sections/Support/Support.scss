@@ -1,0 +1,28 @@
+.support {
+  padding-top: fluid(160, 56);
+  padding-bottom: fluid(100, 56);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(80, 26);
+  }
+
+  &__header {
+    max-width: 601px;
+
+    .section-header__desc {
+      max-width: 462px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: fluid(56, 24) fluid(64, 20);
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
