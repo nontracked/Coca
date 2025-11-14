@@ -1,4 +1,247 @@
 .footer {
-  padding-block: 20px;
-  background-color: var(--color-gray);
+  padding-top: fluid(112, 50);
+
+  &__inner {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(68, 56);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+
+    @include mobile {
+      row-gap: 56px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 24px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      row-gap: fluid(32, 24);
+
+      @include tablet-above {
+        width: 720px;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+  }
+
+  &__logo {
+    width: 300px;
+  }
+
+  &__logo-desc {
+    font-size: fluid(18, 14);
+    font-weight: 500;
+    line-height: 1.6;
+
+    @include mobile {
+      color: var(--color-placeholder);
+    }
+  }
+
+  &__logo-desc--dark {
+    color: var(--color-placeholder);
+  }
+
+  &__desc {
+    display: flex;
+    column-gap: fluid(24, 8);
+    font-size: fluid(24, 16);
+    font-weight: 600;
+    line-height: 1.42;
+
+    &::before {
+      content: '';
+      width: fluid(150, 70);
+      max-width: 70px;
+      height: 1px;
+      margin-top: 15px;
+      background-color: currentColor;
+    }
+  }
+
+  &__extra-copy {
+    @include mobile {
+      color: var(--color-placeholder);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    column-gap: fluid(95, 20);
+
+    @include mobile {
+      @include visually-hidden;
+    }
+  }
+
+  &__menu--dark {
+    .footer-menu-column__main-link {
+      color: var(--color-white);
+
+      @include hover {
+        color: var(--color-placeholder);
+      }
+    }
+
+    .footer-menu-column__link {
+      color: var(--color-placeholder);
+
+      @include hover {
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  &__header-button {
+    @include mobile {
+      margin-left: fluid(100, 35);
+    }
+  }
+
+  &__title {
+    font-size: fluid(64, 24);
+    font-weight: 600;
+    line-height: 1.42;
+  }
+
+  &__title--light {
+    color: var(--color-white);
+  }
+
+  &__desc--gray {
+    font-size: fluid(18, 16);
+    font-weight: 500;
+    line-height: 1.78;
+    color: #afb3bb;
+
+    @include mobile {
+      font-weight: 600;
+      line-height: 1.5;
+      color: var(--color-white);
+    }
+  }
+
+  &__extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    padding-block: 40px;
+    border-top: 1px solid rgba(148, 148, 148, 0.39);
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+
+  &__extra-links {
+    display: flex;
+    align-items: center;
+    column-gap: 72px;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+
+  &__extra-copy--dark {
+    color: var(--color-white);
+
+    @include mobile {
+      color: var(--color-placeholder);
+    }
+  }
+}
+
+.footer--dark {
+  background-color: var(--color-dark);
+}
+
+.footer--light {
+  position: relative;
+  overflow: clip;
+  background-color: var(--color-white);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -90px;
+    left: 231px;
+    width: fluid(525, 228);
+    height: fluid(525, 228);
+    background: url('/src/assets/images/hero/blur-orange.png') center/100%
+      no-repeat;
+    filter: blur(fluid(80, 60));
+
+    @include laptop {
+      left: 71px;
+    }
+
+    @include tablet {
+      left: 131px;
+    }
+
+    @include mobile {
+      left: 60px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: -104px;
+    width: fluid(525, 228);
+    height: fluid(525, 228);
+    background: url('/src/assets/images/hero/blur-green.png') center/100%
+      no-repeat;
+    filter: blur(fluid(80, 60));
+  }
+}
+
+.privacy {
+  &__link {
+    @include mobile {
+      color: var(--color-placeholder);
+    }
+  }
+
+  &__list {
+    display: flex;
+    column-gap: fluid(40, 24);
+  }
+
+  &__link--dark {
+    color: var(--color-white);
+
+    @include mobile {
+      color: var(--color-placeholder);
+    }
+  }
 }

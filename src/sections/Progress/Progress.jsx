@@ -4,7 +4,7 @@ import { Image } from 'minista'
 import Score from '@/components/Score/index.js'
 
 export const Progress = ({}) => {
-  const area = 'progress'
+  const aria = 'progress'
   const scoreItem = [
     {
       num: '17k',
@@ -24,7 +24,7 @@ export const Progress = ({}) => {
     },
   ]
   return (
-    <section className="progress container" aria-labelledby={area}>
+    <section className="progress container" aria-labelledby={aria}>
       <div className="progress__inner">
         <SectionHeader
           classname="progress__header"
@@ -32,7 +32,7 @@ export const Progress = ({}) => {
           desc="To build software that gives customer facing teams in small and medium-sized businesses the ability to create rewarding and long-lasting relationships with customers"
           titleMobile="Drive sustainable growth with personal and engaging experiences"
           mode="flex"
-          id={area}
+          id={aria}
         />
         <Image
           className="progress__image"

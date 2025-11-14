@@ -1,2 +1,18 @@
 .slider {
 }
+
+// Стили для Swiper - гарантируем горизонтальное отображение
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper {
+  overflow: hidden;
+}
+
+ .swiper-slide {
+  display: flex;
+  flex-shrink: 0;
+  width: auto;
+  height: auto;
+}

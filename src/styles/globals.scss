@@ -3,6 +3,11 @@ html {
     overflow: hidden;
   }
 
+  &::selection {
+    color: var(--color-white);
+    background-color: var(--color-dark);
+  }
+
   scrollbar-gutter: auto;
 }
 
@@ -90,4 +95,8 @@ a {
 
 :focus-visible {
   @include focus-visible;
+}
+
+img {
+  user-select: none;
 }

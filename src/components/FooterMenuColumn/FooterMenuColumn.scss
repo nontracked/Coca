@@ -1,0 +1,24 @@
+.footer-menu-column {
+  justify-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  &__main-link {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}

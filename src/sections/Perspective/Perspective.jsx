@@ -6,7 +6,7 @@ import { PerspectiveComponent } from '@/components/PerspectiveComponent/index.js
 import Icon from '@/components/Icon/index.js'
 
 export const Perspective = ({}) => {
-  const area = 'perspective'
+  const aria = 'perspective'
   const compItems = [
     {
       iconName: 'calendar',
@@ -34,14 +34,14 @@ export const Perspective = ({}) => {
     },
   ]
   return (
-    <section className="perspective" aria-labelledby={area}>
+    <section className="perspective" aria-labelledby={aria}>
       <div className="perspective__inner container">
         <SectionHeader
           title="Coca help our client solve complex customer problems with date that does more."
           desc="Our platform offers the modern enterprise full control of how date can be access and used with industry leading software solutions for identity, activation, and date collaboration"
           titleMobile="Sans help our client solve complex customer problems with date that does more."
           mode="default"
-          id={area}
+          id={aria}
         />
         <div className="perspective__content">
           <ul className="perspective__list">

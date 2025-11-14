@@ -1,0 +1,16 @@
+.reviews-slider-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(40, 8);
+
+  &__author {
+    justify-self: flex-start;
+    position: relative;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(16, 11);
+  }
+}

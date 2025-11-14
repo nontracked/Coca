@@ -1,0 +1,53 @@
+.about-hero {
+  padding-top: fluid(160, 32);
+  padding-bottom: fluid(150, 56);
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(118, 48);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(135, 70);
+  }
+
+  &__desc {
+    display: flex;
+    column-gap: fluid(24, 8);
+    max-width: 738px;
+
+    &::before {
+      content: '';
+      flex-shrink: 0;
+      display: flex;
+      width: fluid(76, 24);
+      height: 1px;
+      margin-top: fluid(20, 9);
+      background-color: currentColor;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 20;
+
+    .container {
+      padding-inline: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: fluid(130, 140);
+      left: fluid(-9, -120);
+      width: fluid(525, 228);
+      height: fluid(525, 228);
+      background: url('/src/assets/images/hero/blur-orange.png') center/100%
+        no-repeat;
+      filter: blur(fluid(120, 60));
+    }
+  }
+}

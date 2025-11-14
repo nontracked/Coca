@@ -29,16 +29,16 @@ export const Support = ({}) => {
       iconName: 'dashboard',
     },
   ]
-  const area = 'Support'
+  const aria = 'Support'
   return (
-    <section className="support container" aria-labelledby={area}>
+    <section className="support container" aria-labelledby={aria}>
       <div className="support__inner">
         <SectionHeader
           classname="support__header"
           title="Advertise, analyze, and optimize! We do it all for you"
           desc="Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster"
           titleMobile="Here’s how Sans can benefit your busines"
-          id={area}
+          id={aria}
         />
         <ul className="support__list">
           {cards.map((items, index) => (

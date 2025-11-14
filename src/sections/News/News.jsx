@@ -6,17 +6,18 @@ import { trendingSlider } from '@/components/Slider/sliderData.js'
 import { trendingSliderConfig } from '@/components/Slider/sliderConfig.js'
 
 export const News = ({}) => {
-  const area = 'News'
+  const aria = 'News'
   return (
-    <section className="news" aria-labelledby={area}>
+    <section className="news" aria-labelledby={aria}>
       <div className="news__inner">
         <SectionHeader
           classname="news__header"
           title="Trending news from Coca"
           desc="we have some new Service to pamper you"
-          id={area}
+          id={aria}
           mode="center"
         />
+
         <Slider config={trendingSliderConfig} items={trendingSlider}>
           {(item) => <NewsSliderCard {...item} />}
         </Slider>

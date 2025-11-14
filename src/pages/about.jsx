@@ -1,4 +1,6 @@
-import About from '@/sections/About'
+import { AboutHero } from '@/sections/AboutHero/index.js'
+import Ideas from '@/sections/Ideas/index.js'
+import { Team } from '@/sections/Team/index.js'
 
 export const metadata = {
   title: 'About',
@@ -7,8 +9,9 @@ export const metadata = {
 export default () => {
   return (
     <>
-      <h1>About page</h1>
-      <About />
+      <AboutHero />
+      <Ideas />
+      <Team />
     </>
   )
 }

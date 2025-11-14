@@ -1,0 +1,1 @@
+export { AboutSliderCard } from './AboutSliderCard'

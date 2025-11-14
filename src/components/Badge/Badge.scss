@@ -1,0 +1,34 @@
+.badge {
+  padding-block: 6px;
+  padding-inline: 12px;
+  border-radius: 100px;
+  background-color: rgba(20, 99, 255, 0.1);
+  justify-self: flex-start;
+
+  &__inner {
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+  }
+
+  &__image {
+    width: 20px;
+    object-fit: cover;
+  }
+
+  &__label {
+    color: var(--color-blue-primary);
+    font-size: fluid(16, 14);
+    font-weight: 500;
+
+    &--white {
+      color: var(--color-white);
+      font-size: 14px;
+    }
+  }
+
+  &--blue {
+    background-color: var(--color-blue-primary);
+  }
+
+}

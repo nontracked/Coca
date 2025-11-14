@@ -1,7 +1,12 @@
 import './Slider.scss'
 import Icon from '@/components/Icon/index.js'
 
-export const Slider = ({hasButtons = false, items = [], config = {}, children}) => {
+export const Slider = ({
+  hasButtons = false,
+  items = [],
+  config = {},
+  children,
+}) => {
   return (
     <div
       className="news__content swiper container"
@@ -20,7 +25,7 @@ export const Slider = ({hasButtons = false, items = [], config = {}, children}) 
             <Icon className="button__prev" hasFill name="prevDisable" />
           </div>
           <div className="swiper-button-next" data-js-slider-next-button="">
-            <Icon className="button__next" name="next" />
+            <Icon className="button__next" hasFill name="next" />
           </div>
         </div>
       )}

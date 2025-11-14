@@ -1,0 +1,26 @@
+.soc1als {
+  &__icon--light {
+    color: var(--color-dark);
+  }
+
+  &__icon--dark {
+    color: var(--color-white);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    height: 1lh;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.icon.soc1als__icon {
+  width: 24px;
+  height: 24px;
+}

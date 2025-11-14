@@ -1,6 +1,6 @@
 .hero {
   display: flex;
-  padding-top: fluid(87, 10);
+  padding-top: fluid(87, 20);
   padding-bottom: 141px;
 
   @include mobile-above {

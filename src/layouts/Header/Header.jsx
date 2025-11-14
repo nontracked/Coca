@@ -1,9 +1,7 @@
 import './Header.scss'
 import clsx from 'clsx'
 import Logo from '@/components/Logo'
-import { Button } from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
-import Icon from '@/components/Icon'
 
 export const Header = ({ url }) => {
   const menuItems = [
@@ -45,7 +43,7 @@ export const Header = ({ url }) => {
               </li>
             ))}
           </ul>
-          <a className="header__menu-link-contact" href="/">
+          <a className="header__menu-link-contact" href="/contact-us">
             <span>Contact Us</span>
           </a>
         </nav>

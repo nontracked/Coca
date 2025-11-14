@@ -3,7 +3,7 @@ import { Image } from 'minista'
 import { SectionHeader } from '@/components/SectionHeader/index.js'
 
 export const Benefits = ({}) => {
-  const area = 'benefits'
+  const aria = 'benefits'
   const benefitsLabel = [
     {
       label: 'Close more deals with single - page contact management',
@@ -17,7 +17,7 @@ export const Benefits = ({}) => {
     },
   ]
   return (
-    <section className="benefits container" aria-labelledby={area}>
+    <section className="benefits container" aria-labelledby={aria}>
       <div className="benefits__inner">
         <Image
           className="benefits__image"
@@ -28,7 +28,7 @@ export const Benefits = ({}) => {
             classname="benefits__header"
             title="Passion to increase company revenue up to 85%"
             desc="Automate your sales, marketing and service in one platform. Avoid date leaks and enable consistent messaging"
-            id={area}
+            id={aria}
           />
           <ul className="benefits__list">
             {benefitsLabel.map((item, index) => (

@@ -6,6 +6,7 @@ export const Button = ({
   type = 'button',
   href,
   children,
+  // dark, light, light-with-border,
   mode = '',
 }) => {
   const isLink = href !== undefined

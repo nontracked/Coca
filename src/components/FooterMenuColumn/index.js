@@ -1,0 +1,1 @@
+export { FooterMenuColumn } from './FooterMenuColumn'

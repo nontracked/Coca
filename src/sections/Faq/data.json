@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Is there a free trial available?",
+    "desc": "Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+    "id": 1
+  },
+  {
+    "title": "How Can I Add More Emails To My Account?",
+    "desc": "You can easily add more email addresses to your account through your dashboard. Simply go to Account Settings → Email Management, where you can add additional email aliases or connect multiple inboxes. Additional email addresses may affect your subscription tier.",
+    "id": 2
+  },
+  {
+    "title": "Can I Change Plans Or Cancel My Subscription At Any Time",
+    "desc": "Absolutely! You can upgrade, downgrade, or cancel your subscription anytime from your account settings. Changes to your plan take effect immediately, and we'll automatically prorate any payments so you only pay for what you use.",
+    "id": 3
+  },
+  {
+    "title": "How Secure Is My Data With Sans CRM",
+    "desc": "We take security seriously. Your data is protected with enterprise-grade 256-bit encryption, regular security audits, and compliance with GDPR & CCPA standards. We never share your data with third parties, and all information is stored in SOC 2 certified data centers.",
+    "id": 4
+  },
+  {
+    "title": "What Is The Uptime Guarantee",
+    "desc": "We offer a 99.9% uptime SLA guarantee for all paid plans. Our infrastructure is built with redundancy across multiple availability zones, and we provide real-time status monitoring. You can check our current system status at any time on our status page.",
+    "id": 5
+  }
+]

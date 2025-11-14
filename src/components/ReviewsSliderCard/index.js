@@ -1,0 +1,1 @@
+export { ReviewsSliderCard } from './ReviewsSliderCard'

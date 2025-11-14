@@ -1,0 +1,7 @@
+.faq {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(80, 32);
+  }
+}

@@ -4,7 +4,7 @@ import { Image } from 'minista'
 import Icon from '@/components/Icon/index.js'
 
 export const Partners = ({}) => {
-  const area = 'Partners'
+  const aria = 'Partners'
   const partners = [
     {
       imgSrc: 'src/assets/images/partners/1.png',
@@ -40,13 +40,13 @@ export const Partners = ({}) => {
     },
   ]
   return (
-    <section className="partner container" aria-labelledby={area}>
+    <section className="partner container" aria-labelledby={aria}>
       <div className="partner__inner">
         <SectionHeader
           classname="partner__header"
           title="890+"
           desc="some big companies that we work with, and trust us very much"
-          id={area}
+          id={aria}
         />
         <ul className="partner__list">
           {partners.map(({ imgSrc, label }) => (

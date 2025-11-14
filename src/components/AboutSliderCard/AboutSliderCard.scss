@@ -1,0 +1,42 @@
+.about-slider-card {
+  @include mobile-above {
+    max-width: 502px;
+  }
+
+  &__image {
+    display: flex;
+    height: fluid(370, 246);
+    object-fit: cover;
+    border-radius: fluid(8, 6);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(24, 16);
+  }
+
+  &__title {
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+  }
+
+  &__desc {
+    line-height: 1.78;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: fluid(32, 16);
+    max-width: 502px;
+  }
+}

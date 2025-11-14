@@ -1,0 +1,33 @@
+.author {
+  justify-self: flex-start;
+  display: flex;
+  align-items: center;
+  column-gap: fluid(24, 12);
+
+  &__image {
+    width: 56px;
+
+    @include mobile {
+      width: 40px;
+    }
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+
+    &-name {
+      font-size: fluid(18, 14);
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    &-position {
+      font-size: fluid(16, 12);
+      font-weight: 500;
+      line-height: 2;
+      color: var(--color-placeholder);
+    }
+  }
+}

@@ -1,5 +1,4 @@
 .news {
-  margin-bottom: 500px;
   padding-bottom: 90px;
 
   &__inner {
@@ -12,6 +11,7 @@
   }
 
   &__content {
+    position: relative;
     display: flex;
     flex-direction: column;
     row-gap: 50px;
@@ -36,7 +36,14 @@
     background-color: var(--color-dark);
     border: 1px solid transparent;
     border-radius: 50%;
+    cursor: pointer;
     transition-duration: var(--transition-duration);
+
+    &:not(.swiper-button-disabled) {
+      @include hover {
+        background-color: var(--color-accent);
+      }
+    }
 
     @include mobile {
       width: 32px;
@@ -63,4 +70,14 @@
   color: var(--color-offer-button-border);
   background-color: transparent;
   border: 1px solid var(--color-offer-button-border);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

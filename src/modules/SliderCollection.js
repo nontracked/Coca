@@ -23,11 +23,6 @@ class Slider {
       this.rootElement.getAttribute(getAttrNameFromSelector(rootSelector))
     )
     this.init()
-    this.log()
-  }
-
-  log() {
-    console.log(1213)
   }
 
   init() {

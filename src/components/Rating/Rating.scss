@@ -1,0 +1,32 @@
+.rating {
+  --ratingView: 5;
+
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+
+  &__stars {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 20px;
+
+    &-filled {
+      --clipEnd: calc(103% / 5 * var(--ratingView));
+
+      position: absolute;
+      inset: 0;
+      clip-path: polygon(0 0, var(--clipEnd) 0, var(--clipEnd) 100%, 0 100%);
+    }
+
+    &-filled {
+      fill: red;
+    }
+  }
+
+  &__label {
+    height: 0.9lh;
+    font-size: fluid(16, 14);
+    font-weight: 500;
+  }
+}

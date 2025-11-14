@@ -23,7 +23,7 @@ export default (props) => {
       </Head>
       <Header url={url} />
       <Content>{children}</Content>
-      <Footer />
+      <Footer title={title} />
     </>
   )
 }
