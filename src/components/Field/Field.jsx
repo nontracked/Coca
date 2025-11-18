@@ -2,7 +2,7 @@ import './Field.scss'
 import getIdFromTitle from '@/utils/getIdFromTitle'
 import clsx from 'clsx'
 
-export default (props) => {
+export const Field =  (props) => {
   const {
     className,
     id = getIdFromTitle(props.label),

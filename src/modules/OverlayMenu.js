@@ -52,9 +52,7 @@ export class OverlayMenu {
   constructor() {
     this.rootElement = document.querySelector(this.selectors.root)
     this.overlayElement = this.rootElement.querySelector(this.selectors.overlay)
-    this.burgerElement = this.rootElement.querySelector(
-      this.selectors.burgerButton
-    )
+    this.burgerElement = this.rootElement.querySelector(this.selectors.burgerButton)
     this.bindEvents()
   }
 
