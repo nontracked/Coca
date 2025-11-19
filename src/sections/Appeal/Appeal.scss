@@ -1,0 +1,154 @@
+.appeal {
+  padding-top: fluid(120, 56);
+  padding-bottom: fluid(160, 80);
+  overflow: clip;
+  @include tablet-above {
+    padding-bottom: fluid(260, 80);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(20, 12)
+  }
+
+  &__title {
+    font-size: fluid(36, 18);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 32px;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: fluid(18, 14);
+    color: var(--color-placeholder);
+  }
+
+  &__mail-link {
+    color: var(--color-blue-primary);
+    cursor: pointer;
+    position: relative;
+    transition-duration: var(--transition-duration);
+    @include hover {
+      color: var(--color-accent);
+      transition-duration: var(--transition-duration);
+    }
+
+    &-tooltip {
+      position: absolute;
+      display: none;
+      right: 20px;
+      top: 80px;
+      rotate: -30deg;
+      padding-inline: 10px;
+      padding-block: 5px;
+      background-color: var(--color-accent);
+      color: var(--color-white);
+      font-size: 14px;
+      border-radius: 50px;
+
+      @include tablet {
+        top: 60px;
+      }
+
+
+      &.visible {
+        display: block;
+        animation: copyTooltipIn 0.2s ease forwards;
+      }
+
+      &:not(.visible) {
+        display: block;
+        animation: copyTooltipOut 0.2s ease forwards;
+      }
+    }
+  }
+
+  &__inner {
+    padding: fluid(48, 24);
+    border: var(--border);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+    justify-self: flex-start;
+    box-shadow: 0 0 10px 0 #2f2f2f1a;
+    position: relative;
+    background-color: var(--color-white);
+    @include mobile {
+      width: 100%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("/src/assets/images/form/1.jpg") center/100% no-repeat;
+      width: 987px;
+      height: 885px;
+      right: -100%;
+      z-index: -10;
+      top: 0;
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: fluid(32, 16);
+    row-gap: 24px;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      width: 100%;
+    }
+  }
+
+  &__form-cell {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+  }
+
+  &__form-cell--wide {
+    grid-column: -1/1;
+
+    .field__control {
+      width: 100%;
+    }
+  }
+}
+
+
+@keyframes copyTooltipIn {
+  from {
+    opacity: 0;
+    transform: scale(0.6) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+
+  }
+}
+
+@keyframes copyTooltipOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.6) translateY(20px);
+  }
+}

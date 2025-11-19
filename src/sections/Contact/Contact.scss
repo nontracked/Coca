@@ -1,5 +1,6 @@
 .contact {
-  padding-block: fluid(90, 10);
+  padding-top: fluid(90, 10);
+  padding-bottom: fluid(90, 56);
 
   &__map {
     position: relative;
@@ -20,11 +21,8 @@
     width: 100%;
 
     path {
-      fill: red;
-      transition: opacity;
+      fill: transparent;
       transition-duration: var(--transition-duration);
-      opacity: 0.2;
-      filter: drop-shadow(2px 4px 6px black);
       cursor: pointer;
       @include hover {
         opacity: 0;
@@ -176,116 +174,4 @@
 }
 
 
-/*
-
-.contact__map {
-  position: relative;
-  display: inline-block;
-}
-
-.part {
-  cursor: pointer;
-  transition: all 0.3s ease;
-  fill: #e0e0e0;
-  stroke: #ffffff;
-  stroke-width: 1;
-}
-
-.part:hover {
-  fill: #d4d4d4;
-}
-
-.part.active {
-  fill: #b8d4ff;
-  stroke: #4a90e2;
-  stroke-width: 2;
-}
-
-!* PIN стили *!
-.pin {
-  position: absolute;
-  display: none;
-  pointer-events: none;
-  z-index: 10;
-  transform: translate(-50%, -100%);
-}
-
-.pin__marker {
-  width: 24px;
-  height: 24px;
-  background: #ff4444;
-  border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg);
-  position: relative;
-  animation: bounce 0.5s ease;
-}
-
-.pin__marker::after {
-  content: '';
-  width: 12px;
-  height: 12px;
-  background: white;
-  border-radius: 50%;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-}
-
-@keyframes bounce {
-  0% { transform: rotate(-45deg) scale(0); }
-  50% { transform: rotate(-45deg) scale(1.2); }
-  100% { transform: rotate(-45deg) scale(1); }
-}
-
-!* Тултип стили *!
-.tooltip {
-  position: absolute;
-  display: none;
-  background: white;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-  z-index: 20;
-  max-width: 280px;
-  border: 1px solid #e0e0e0;
-  transform: translateY(-10px);
-  animation: fadeIn 0.3s ease;
-}
-
-.tooltip__arrow {
-  position: absolute;
-  bottom: -10px;
-  left: 20px;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid white;
-}
-
-.tooltip__title {
-  margin: 0 0 8px 0;
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-}
-
-.tooltip__description {
-  margin: 0 0 8px 0;
-  color: #666;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.tooltip__street {
-  margin: 0;
-  color: #888;
-  font-size: 12px;
-  white-space: pre-line;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(-10px); }
-}*/
 

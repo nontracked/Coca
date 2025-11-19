@@ -2,12 +2,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   row-gap: 11px;
   justify-self: flex-start;
   width: 180px;
   align-items: center;
+  pointer-events: none;
+  transition-duration: var(--transition-duration);
 
   path {
     fill: #F5F5FF;
@@ -28,6 +30,7 @@
     font-weight: 400;
     line-height: 1.5;
     color: var(--color-placeholder);
+    transition: all 5s;
   }
 
   &__tooltip {
@@ -40,28 +43,16 @@
     border-radius: 8px;
     box-shadow: 0 0 7px 0 #7c7c7c6e;
   }
-}
-
-.pop-up {
-  display: none;
-  pointer-events: none;
-  transition-duration: var(--transition-duration);
-
-  &__title {
-    transition: all 5s;
-  }
 
   &.visible {
     display: flex;
     transition-duration: var(--transition-duration);
     animation: tooltipFadeIn 0.3s ease forwards;
-  }
-
-  @include mobile {
-    transform: scale(0.7);
+    @include mobile {
+      display: none;
+    }
   }
 }
-
 
 @keyframes tooltipFadeIn {
   from {

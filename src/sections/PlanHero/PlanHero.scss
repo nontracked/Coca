@@ -75,6 +75,7 @@
 
     &:checked {
       background-color: var(--color-blue-primary);
+
       &::before {
         translate: 100% 0;
         background-color: var(--color-border);
