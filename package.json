@@ -1,5 +1,6 @@
 {
-  "name": "friendly-frontend-starter",
+  "name": "Coca",
+  "homepage": "https://nontracked.github.io/Coca/",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
@@ -19,7 +20,9 @@
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
     "lint": "run-s lint:js lint:css format",
-    "lint:fix": "run-s lint:js:fix lint:css:fix format:fix"
+    "lint:fix": "run-s lint:js:fix lint:css:fix format:fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.28.0",
@@ -50,6 +53,7 @@
   "dependencies": {
     "@a1rth/css-normalize": "1.2.1",
     "clsx": "2.1.1",
+    "gh-pages": "^6.3.0",
     "imask": "7.6.1",
     "swiper": "^12.0.3",
     "vite": "^7.2.2"
