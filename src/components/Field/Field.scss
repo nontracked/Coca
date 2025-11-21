@@ -4,8 +4,8 @@
   align-items: start;
 
   &__label {
-    font-weight: 500;
     font-size: 14px;
+    font-weight: 500;
     line-height: 1.4;
   }
 
@@ -17,17 +17,20 @@
     height: 44px;
     padding-block: 10px;
     padding-inline: 14px;
-    border-radius: 8px;
-    border: var(--border);
     font-size: 14px;
+    border: var(--border);
+    border-radius: 8px;
+
     @include tablet-above {
       width: 240px;
     }
+
     @include mobile {
       width: 100%;
     }
+
     @include hover {
-//      border-color: var(--color-white);
+      //      border-color: var(--color-white);
     }
 
     &:user-invalid {

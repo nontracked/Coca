@@ -1,1 +1,1 @@
-export  {PlanHero} from './PlanHero'
+export { PlanHero } from './PlanHero'

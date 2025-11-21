@@ -1,1 +1,1 @@
-export {Path} from './Path'
+export { Path } from './Path'

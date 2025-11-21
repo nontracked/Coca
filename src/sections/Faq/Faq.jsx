@@ -1,10 +1,10 @@
 import './Faq.scss'
-import {SectionHeader} from "@/components/SectionHeader/index.js";
+import { SectionHeader } from '@/components/SectionHeader/index.js'
 import faqItems from './data.json'
-import {FaqItem} from "@/components/FaqItem/index.js";
+import { FaqItem } from '@/components/FaqItem/index.js'
 
 export const Faq = ({}) => {
-  const aria = "Frequently asked questions"
+  const aria = 'Frequently asked questions'
 
   return (
     <section className="faq container" aria-labelledby={aria}>
@@ -22,8 +22,7 @@ export const Faq = ({}) => {
             </li>
           ))}
         </ul>
-        <div className="faq__accordion accordion">
-        </div>
+        <div className="faq__accordion accordion"></div>
       </div>
     </section>
   )

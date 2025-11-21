@@ -14,7 +14,7 @@ export const AboutSliderCard = ({ imgSrc, title, desc }) => {
             <div className="about-slider-card__desc">{desc}</div>
           </div>
           <Button mode="dark" className="about-slider-card__button">
-            See Details >
+            See Details
           </Button>
         </div>
       </div>

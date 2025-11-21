@@ -1,11 +1,11 @@
 import './Footer.scss'
-import {Button} from '@/components/Button/index.js'
+import { Button } from '@/components/Button/index.js'
 import clsx from 'clsx'
 import Logo from '@/components/Logo/index.js'
-import {FooterMenuColumn} from '@/components/FooterMenuColumn/index.js'
-import {Soc1als} from '@/components/Soc1als/index.js'
+import { FooterMenuColumn } from '@/components/FooterMenuColumn/index.js'
+import { Soc1als } from '@/components/Soc1als/index.js'
 
-export default ({title}) => {
+export default ({ title }) => {
   const privacyList = [
     {
       label: 'Privacy Policy',
@@ -23,39 +23,39 @@ export default ({title}) => {
   const isTransparentFooter = title === 'Home' || title === 'Blog'
   const footerColumn = [
     {
-      mainLink: {label: 'Company', href: '/company'},
+      mainLink: { label: 'Company', href: '/company' },
       links: [
-        {label: 'About', href: '/about'},
-        {label: 'Pricing', href: '/Pricing'},
-        {label: 'Jobs', href: '/Jobs'},
-        {label: 'Blog', href: '/Blog'},
+        { label: 'About', href: '/about' },
+        { label: 'Pricing', href: '/Pricing' },
+        { label: 'Jobs', href: '/Jobs' },
+        { label: 'Blog', href: '/Blog' },
       ],
     },
     {
-      mainLink: {label: 'Product', href: '/product'},
+      mainLink: { label: 'Product', href: '/product' },
       links: [
-        {label: 'Sales Software', href: '/SalesSoftware'},
-        {label: 'Marketplace', href: '/Marketplace'},
-        {label: 'Terms & Conditions', href: '/'},
-        {label: 'Privacy Policy', href: '/privacy'},
+        { label: 'Sales Software', href: '/SalesSoftware' },
+        { label: 'Marketplace', href: '/Marketplace' },
+        { label: 'Terms & Conditions', href: '/' },
+        { label: 'Privacy Policy', href: '/privacy' },
       ],
     },
     {
-      mainLink: {label: 'Discover', href: '/discover'},
+      mainLink: { label: 'Discover', href: '/discover' },
       links: [
-        {label: 'CRM Comparison', href: '/'},
-        {label: 'Partner Program', href: '/'},
-        {label: 'What is CRM', href: '/'},
-        {label: 'Resource', href: '/'},
+        { label: 'CRM Comparison', href: '/' },
+        { label: 'Partner Program', href: '/' },
+        { label: 'What is CRM', href: '/' },
+        { label: 'Resource', href: '/' },
       ],
     },
     {
-      mainLink: {label: 'Help Center', href: '/help'},
+      mainLink: { label: 'Help Center', href: '/help' },
       links: [
-        {label: 'Community', href: '/'},
-        {label: 'Knowledge Base', href: '/'},
-        {label: 'Academy', href: '/'},
-        {label: 'Support', href: '/'},
+        { label: 'Community', href: '/' },
+        { label: 'Knowledge Base', href: '/' },
+        { label: 'Academy', href: '/' },
+        { label: 'Support', href: '/' },
       ],
     },
   ]

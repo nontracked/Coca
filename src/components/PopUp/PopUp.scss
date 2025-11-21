@@ -1,27 +1,27 @@
 .pop-up {
+  justify-self: flex-start;
   position: absolute;
   top: 0;
   left: 0;
   display: none;
   flex-direction: column;
-  row-gap: 11px;
-  justify-self: flex-start;
-  width: 180px;
   align-items: center;
-  pointer-events: none;
+  row-gap: 11px;
+  width: 180px;
   transition-duration: var(--transition-duration);
+  pointer-events: none;
 
   path {
-    fill: #F5F5FF;
+    fill: #f5f5ff;
   }
 
   circle {
-    fill: #1463FF;
+    fill: #1463ff;
   }
 
   &__title {
-    font-weight: 600;
     font-size: 14px;
+    font-weight: 600;
     line-height: 1.4;
   }
 
@@ -48,6 +48,7 @@
     display: flex;
     transition-duration: var(--transition-duration);
     animation: tooltipFadeIn 0.3s ease forwards;
+
     @include mobile {
       display: none;
     }
@@ -59,6 +60,7 @@
     opacity: 0;
     transform: scale(0.6) translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: scale(1) translateY(0);

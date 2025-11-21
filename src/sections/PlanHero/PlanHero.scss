@@ -10,8 +10,8 @@
 
   &__header {
     display: flex;
-    align-items: center;
     flex-direction: column-reverse;
+    align-items: center;
     row-gap: fluid(24, 16);
     text-align: center;
   }
@@ -22,13 +22,13 @@
   }
 
   &__action {
-    margin-top: fluid(22, 0);
     order: 1;
     display: flex;
     flex-direction: row-reverse;
     column-gap: 12px;
-    font-weight: 500;
+    margin-top: fluid(22, 0);
     font-size: fluid(16, 14);
+    font-weight: 500;
     line-height: 1.6;
     color: var(--color-placeholder);
   }
@@ -39,16 +39,19 @@
 
   &__list {
     --columns: 3;
+
     display: grid;
     grid-template-columns: repeat(var(--columns), 1fr);
     column-gap: fluid(32, 16);
+
     @include tablet {
       --columns: 2;
+
       row-gap: 32px;
     }
+
     @include mobile {
       --columns: 1;
-
     }
   }
 
@@ -59,42 +62,40 @@
   }
 
   &__label {
-
   }
 
   &__input {
-    margin: 0;
+    appearance: none;
+    position: relative;
     width: 44px;
     height: 24px;
+    margin: 0;
     background-color: var(--color-border);
-    appearance: none;
     border-radius: 50px;
     cursor: pointer;
-    position: relative;
     transition-duration: var(--transition-duration);
 
     &:checked {
       background-color: var(--color-blue-primary);
 
       &::before {
-        translate: 100% 0;
         background-color: var(--color-border);
+        translate: 100% 0;
       }
     }
 
     &::before {
-      transition-duration: var(--transition-duration);
-
+      content: '';
       position: absolute;
       display: flex;
-      align-items: center;
       justify-content: center;
-      content: '';
-      background-color: var(--color-blue-primary);
+      align-items: center;
       width: 20px;
       height: 20px;
-      border-radius: 50%;
       margin: 2px;
+      background-color: var(--color-blue-primary);
+      border-radius: 50%;
+      transition-duration: var(--transition-duration);
     }
   }
 }

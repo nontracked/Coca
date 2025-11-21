@@ -36,7 +36,7 @@ export const Team = ({}) => {
                 but people who embody our company values.
               </span>
               <a className="team__invite-link" href="/">
-                See Open Position ->
+                See Open Position
               </a>
             </div>
           </div>

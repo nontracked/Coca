@@ -1,8 +1,8 @@
-import {PlanHero} from "@/sections/PlanHero/index.js";
-import {Faq} from "@/sections/Faq/index.js";
+import { PlanHero } from '@/sections/PlanHero/index.js'
+import { Faq } from '@/sections/Faq/index.js'
 
 export const metadata = {
-  title: "Pricing",
+  title: 'Pricing',
 }
 
 export default () => {

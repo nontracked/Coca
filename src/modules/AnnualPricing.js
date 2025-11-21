@@ -4,30 +4,32 @@ export class AnnualPricing {
     toggle: '[data-js-plan-toggle]',
     starter: '#starter',
     popular: '#popular',
-    enter: '#enterprise'
+    enter: '#enterprise',
   }
 
-  storageKey = "annualPrice"
+  storageKey = 'annualPrice'
 
   constructor() {
     this.rootElement = document.querySelector(this.selectors.root)
-    if (!this.rootElement) return
+    if (!this.rootElement) {
+      return
+    }
     this.toggleElement = this.rootElement.querySelector(this.selectors.toggle)
     this.starterElement = this.rootElement.querySelector(this.selectors.starter)
     this.popularElement = this.rootElement.querySelector(this.selectors.popular)
-    this.enterpriseElement = this.rootElement.querySelector(this.selectors.enter)
+    this.enterpriseElement = this.rootElement.querySelector(
+      this.selectors.enter
+    )
     this.bindEvents()
     this.loadToggleState()
   }
 
   get pricesConfig() {
-    return (
-      [
-        {element: this.starterElement, price: 100},
-        {element: this.popularElement, price: 1400},
-        {element: this.enterpriseElement, price: 2000},
-      ]
-    )
+    return [
+      { element: this.starterElement, price: 100 },
+      { element: this.popularElement, price: 1400 },
+      { element: this.enterpriseElement, price: 2000 },
+    ]
   }
 
   bindEvents() {
@@ -54,7 +56,7 @@ export class AnnualPricing {
   }
 
   updatePrice(isAnnualPrice) {
-    this.pricesConfig.map(({element, price}) => {
+    this.pricesConfig.map(({ element, price }) => {
       const finalPrice = isAnnualPrice ? `$${price * 0.8}` : `$${price}`
       element.style.opacity = '0'
       element.style.transition = 'all 0.25s'

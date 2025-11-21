@@ -1,3 +1,3 @@
-import {PricingPlanCard} from './PricingPlanCard'
+import { PricingPlanCard } from './PricingPlanCard'
 
 export default PricingPlanCard

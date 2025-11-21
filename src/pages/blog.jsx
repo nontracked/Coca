@@ -1,11 +1,7 @@
 export const metadata = {
-  title: 'Blog'
+  title: 'Blog',
 }
 
 export default () => {
-  return (
-    <>
-
-    </>
-  )
+  return <></>
 }
